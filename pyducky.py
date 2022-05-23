@@ -53,7 +53,7 @@ sleep(2)
 
 print("Preparation done!\n")
 
-#Flashing the right programm
+#Flashing the right program
 
 if file == 1:
     input("Please modify the file src/scripts/reverse.dd to your needs the press enter...")
