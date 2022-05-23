@@ -1,0 +1,9 @@
+REM The next four lines open Notepad in Windows and type "You have been hacked"
+DELAY 1000
+GUI r
+DELAY 100
+STRING notepad
+DELAY 100
+ENTER
+DELAY 250
+STRING You have been hacked!!!

@@ -1,0 +1,7 @@
+PEM Rickroll in a browser
+DELAY 1000
+GUI r
+DELAY 200
+STRING cmd.exe /c start msedge https://www.youtube.com/watch?v=dQw4w9WgXcQ&loop=1
+DELAY 100
+ENTER
