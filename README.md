@@ -1,4 +1,4 @@
-*PyDucky Script*
+ # PyDucky Script
 
 In order to use this tool you must have
 your pico mounted in /media/YOURUSER/PICONAME
@@ -8,7 +8,7 @@ To run the script:
 
 $ python3 pyducky.py
 
-*Notice*
+# Notice
 
 Please use this tool for educational purposes
 only.DO NOT USE IT TO DESTROY SOMEONES SYSTEM.
