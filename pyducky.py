@@ -19,7 +19,7 @@ print("Welcome to the pyducky script, please choose a program: \n")
 
 print("1) Reverse Shell\t 2) Turn off antivairus")
 print("3) Wifi Extractor\t 4) Rickroll")
-print("5) Hacked Message\n")
+print("5) Hacked Message\t 6) Custom\n")
 
 file = int(input("Please type a number and press enter: "))
 
@@ -27,9 +27,9 @@ print("")
 
 #Preparing the pico
 
-print("Please hold the boot select button and connect the pico. Waiting 10 seconds...")
+input("Please hold the boot select button and connect the pico. Press enter when it shows up...")
 
-sleep(10)
+sleep(5)
 
 print("Formating pico...")
 os.system("cp src/format.uf2 /media/$USER/RPI-RP2/ ")
@@ -76,6 +76,10 @@ elif file == 4:
 elif file == 5:
     os.system("cp src/scripts/hacked.dd /media/$USER/CIRCUITPY/payload.dd")
     print("Transfered Hacked Message\n")
+elif file == 6:
+    input("Create your custom file src/scripts/custom.dd and press enter...")
+    os.system("cp src/scripts/custom.dd /media/$USER/CIRCUITPY/payload.dd")
+   print("Transfered custm file.\n")
 else:
     exit("Wrong number please rerun the script...")
 
