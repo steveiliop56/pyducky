@@ -1,14 +1,22 @@
- # PyDucky Script
+# The repository is being updated please come back in a few minutes...
+
+# PyDucky Script
 
 In order to use this tool you must have
-your pico mounted in /media/YOURUSER/PICONAME
-with its default name.
+your pico mounted in ```/media/YOURUSER/PICONAME``` 
+for linux and in windows you must know the disk letter.
 
-To run the script:
+# To run the script:
 
-$ python3 pyducky.py
+Linux: 
+
+```$ python3 pyducky_linux.py```
+
+Windows: 
+
+```$ python3 pyducky_windows.py```
 
 # Notice
 
 Please use this tool for educational purposes
-only.DO NOT USE IT TO DESTROY SOMEONES SYSTEM.
+only.**Do not use this tool for _malicious_ purposes.**
