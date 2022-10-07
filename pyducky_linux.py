@@ -79,7 +79,7 @@ elif file == 5:
 elif file == 6:
     input("Create your custom file src/scripts/custom.dd and press enter...")
     os.system("cp src/scripts/custom.dd /media/$USER/CIRCUITPY/payload.dd")
-   print("Transfered custm file.\n")
+    print("Transfered custm file.\n")
 else:
     exit("Wrong number please rerun the script...")
 
