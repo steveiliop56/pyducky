@@ -67,9 +67,9 @@ print("Preparation done!\n")
 
 if file == 1:
 
-    input("Please modify the file src\scripts\reverse.dd to your needs the press enter...")
+    input("Please modify the file src\scripts\\reverse.dd to your needs the press enter...")
 
-    os.system(f"copy src\scripts\reverse.dd {letter}:\payload.dd")
+    os.system(f"copy src\scripts\\reverse.dd {letter}:\payload.dd")
 
     print("Transfered Reverse Shell")
 
@@ -93,11 +93,11 @@ elif file == 4:
 
     if oneortwo == 1:
 
-        os.system(f"copy src\scripts\rickrollcomp.dd {letter}:\payload.dd")
+        os.system(f"copy src\scripts\\rickrollcomp.dd {letter}:\payload.dd")
 
     elif oneortwo == 2:
 
-        os.system(f"copy src\scripts\rickrollsimple.dd {letter}:\payload.dd")
+        os.system(f"copy src\scripts\\rickrollsimple.dd {letter}:\payload.dd")
 
     print("Tranfered Rickroll\n")
 
