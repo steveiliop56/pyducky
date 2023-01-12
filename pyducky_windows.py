@@ -1,4 +1,4 @@
-#!/usr/bin/env/python3
+#!\usr\bin\env\python3
 
 #Import libraries
 
@@ -20,7 +20,7 @@ print("5) Hacked Message\t 6) Custom\n")
 
 file = int(input("Please type a number and press enter: "))
 
-print("")
+print("hola")
 
 #Preparing the pico
 
@@ -32,31 +32,32 @@ sleep(5)
 
 letter = input("Please enter the drive letter: ")
 
-print("")
+print("Letter good")
 
 sleep(2)
 
 print("Formating pico...")
 
-os.system(f"copy src\format.uf2 {letter}:\ ")
+os.system(f"copy src\\format.uf2 {letter}:\ ")
 
 sleep(20)
 
 print("Flashing circuit python...")
 
-os.system(f"copy src\circuit_python.uf2 {letter}:\")
+os.system(f"copy src\circuit_python.uf2 {letter}:\ ")
 
 sleep(20)
 
 print("Copying libraries...")
 
-os.system(f"copy  src\lib/adafruit_hid {letter}:\CIRCUITPY\lib\")
+os.system(f"mkdir {letter}:\lib\\adafruit_hid ")
+os.system(f"copy src\lib\\adafruit_hid {letter}:\lib\\adafruit_hid\ ")
 
 sleep(10)
 
 print("Copying main program...")
 
-os.system(f"copy src\code.py {letter}:\CIRCUITPY\code.py")
+os.system(f"copy src\code.py {letter}:\code.py")
 
 sleep(2)
 
@@ -66,23 +67,23 @@ print("Preparation done!\n")
 
 if file == 1:
 
-    input("Please modify the file src/scripts/reverse.dd to your needs the press enter...")
+    input("Please modify the file src\scripts\reverse.dd to your needs the press enter...")
 
-    os.system(f"copy src\scripts\reverse.dd {letter}:\CIRCUITPY\payload.dd")
+    os.system(f"copy src\scripts\reverse.dd {letter}:\payload.dd")
 
     print("Transfered Reverse Shell")
 
 elif file == 2:
 
-    os.system(f"copy src\scripts\antivaitusoff.dd {letter}:\CIRCUITPY\payload.dd")
+    os.system(f"copy src\scripts\\antivaitusoff.dd {letter}:\payload.dd")
 
     print("Transfered Turn off Antivairus")
 
 elif file == 3:
 
-    input("Please modify src/scripts/extractor.dd to your needs then press enter...")
+    input("Please modify src\scripts\extractor.dd to your needs then press enter...")
 
-    os.system(f"copy src\scripts\extractor.dd {letter}:\CIRCUITPY\payload.dd")
+    os.system(f"copy src\scripts\extractor.dd {letter}:\payload.dd")
 
     print("Transfered Wifi Extractor\n")
 
@@ -92,27 +93,27 @@ elif file == 4:
 
     if oneortwo == 1:
 
-        os.system(f"copy src\scripts\rickrollcomp.dd {letter}:\CIRCUITPY\payload.dd")
+        os.system(f"copy src\scripts\rickrollcomp.dd {letter}:\payload.dd")
 
     elif oneortwo == 2:
 
-        os.system(f"copy src\scripts\rickrollsimple.dd {letter}:\CIRCUITPY\payload.dd")
+        os.system(f"copy src\scripts\rickrollsimple.dd {letter}:\payload.dd")
 
     print("Tranfered Rickroll\n")
 
 elif file == 5:
 
-    os.system(f"copy src\scripts\hacked.dd {letter}:\CIRCUITPY\payload.dd")
+    os.system(f"copy src\scripts\hacked.dd {letter}:\payload.dd")
 
     print("Transfered Hacked Message\n")
 
 elif file == 6:
 
-    input("Create your custom file src/scripts/custom.dd and press enter...")
+    input("Create your custom file src\scripts\custom.dd and press enter...")
 
-    os.system(f"copy src\scripts\custom.dd {letter}:\CIRCUITPY\payload.dd")
+    os.system(f"copy src\scripts\custom.dd {letter}:\payload.dd")
 
-   print("Transfered custm file.\n")
+    print("Transfered custm file.\n ")
 
 else:
 
